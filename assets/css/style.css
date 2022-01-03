@@ -1,0 +1,1158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+/*Area do menu lateral*/
+
+.container{
+    position: relative;
+    width: 100%;
+    
+    
+}
+.navigation{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: rgba(0, 0, 0);
+    transition: 0.5s;
+    overflow:hidden;
+}
+.navigation.active{
+    width: 80px;
+    
+    
+}
+.navigation.active .icon{
+    margin-right: 10px;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigation ul li:hover{
+    background: rgb(114, 0, 0);
+}
+.navigation ul li:nth-child(1){
+    margin-bottom: 20px;
+}
+.navigation ul li:nth-child(1):hover{
+    background: transparent;
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    margin: 5px;
+    
+
+
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -1PX;
+}
+.navigation h2{
+    font-size: 25PX;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 40px;
+    height: 50px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 46px;
+    line-height: 46px;
+    white-space: nowrap;
+    font-size: 22PX;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/*toggle 2 do menu para celular*/
+.toggleMenu{
+    display: flex;
+    justify-content: right;
+    display: none;
+
+    
+}
+.toggle2{
+    right: 0;
+    margin-top: 15px;
+    margin-left: 150px;
+}
+.toggle2 img{
+    width: 40px;
+    height: 40px;
+    z-index: 999;
+}
+
+/*Area do topo do site*/
+
+
+.icon img{
+    width: 40px;
+    height: 40px;
+    
+}
+
+.main{
+    position: absolute;
+    width: calc(100vw - 300px );
+    left: 300px;
+    min-height: 100vh;
+    background: #dfcdcd;
+    transition: 0.5s;
+}
+.main.active{
+    width: calc(100% - 60px);
+    left: 60px;
+    
+}
+.main .topbar{
+    width: 100%;
+    background: rgba(0, 0, 0);
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+
+}
+
+
+.toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.toggle img{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+} 
+.topbar .nome h2 span{
+    margin-right: 30px;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Lora', serif;
+    
+}
+.topbar p{
+    color: #fff;
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+   display: none;
+}
+.topbar .nome h2 span{
+    transition: 1.5s;
+}
+.topbar .nome h2:hover span{
+    filter: blur(20px);
+    opacity: 0;
+    transform: scale(2) ;
+}
+.topbar .nome h2 span:nth-child(10n+1){
+    transition-delay: 0s;
+}
+.topbar .nome h2 span:nth-child(10n+2){
+    transition-delay: 0.1s;
+}
+.topbar .nome h2 span:nth-child(10n+3){
+    transition-delay: 0.2s;
+}
+.topbar .nome h2 span:nth-child(10n+4){
+    transition-delay: 0.3s;
+}
+.topbar .nome h2 span:nth-child(10n+5){
+    transition-delay: 0.4s;
+}
+.topbar .nome h2 span:nth-child(10n+6){
+    transition-delay: 0.5s;
+}
+.topbar .nome h2 span:nth-child(10n+7){
+    transition-delay: 0.6s;
+}
+.topbar .nome h2 span:nth-child(10n+8){
+    transition-delay: 0.7s;
+}
+.topbar .nome h2 span:nth-child(10n+9){
+    transition-delay: 0.8s;
+}
+.topbar .nome h2 span:nth-child(10n+10){
+    transition-delay: 0.9s;
+}
+
+/*area de slide show*/
+
+.swiper{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 92vh;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-next{
+    margin-right: 30px;
+    display: none;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+.swiper-button-next:after, .swiper-button-prev:after{
+    display: none;
+}
+
+/*area de sobre estabelecimento*/
+
+.container-sobre{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    
+}
+.container-sobre .areaSobre{
+  
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-sobre  .titulo{
+    width: 100%;
+    margin: 50px 20px 0 0;
+    text-align: center;
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    text-shadow:2px 1px 5px rgb(114, 0, 0);
+    font-weight: bold;
+    
+}
+.container-sobre .titulo p{
+    font-size: 28px;
+    letter-spacing: 7px;
+}
+
+.container-sobre .areaSobre .SobreLeft{
+    width: 40%;
+    margin: 50px 0 50px 30px;
+}
+.container-sobre .areaSobre .SobreLeft .textoSobre{
+    width: 100%;
+}
+.container-sobre .areaSobre .SobreLeft .textoSobre p {
+    font-size: 18px;
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+
+}
+.container-sobre .areaSobre   .sobreRight{
+    width: 60%;
+    display: flex;
+    
+    align-items: center;
+}
+.container-sobre .areaSobre   .sobreRight   .areaVideo {
+    width: 100%;
+    height: 100%;
+    
+}
+.container-sobre .areaSobre   .sobreRight   .areaVideo .video video{
+   width: 93%;
+   margin-left: 30px;
+   
+   
+   
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 50px 0;
+}
+.btn a{
+    padding: 15px 15px 15px 15px;
+    background-color: rgba(247, 0, 0, 0.9);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 20px;
+    color: #fff;
+}
+.btn a:hover{
+    background-color: rgb(114, 0, 0);
+}
+
+/*area de serviços*/
+
+.container-services{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-services .area-services{
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.container-services .area-services  .titulo-service p {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    text-shadow:2px 1px 5px rgb(255, 5, 5);
+    font-weight: bold;
+    letter-spacing: 10px;
+    margin: 30px 0 30px 0;  
+}
+.container-services .area-services .servicos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.container-services .area-services .servicos .servico1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-services .area-services .servicos .servico1 .image{
+    margin: 40px 70px 40px 70px; 
+}
+.container-services .area-services .servicos .servico1 .image img{
+    width: 80px;
+    height: 80px;
+}
+.nomeServico {
+    text-align: center;
+    width: 100%;
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+}
+.nomeServico p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.valorServico{
+    width: 100%;
+    text-align: center;
+}
+.valorServico p {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
+.valorServico p span{
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
+.valor2{
+    margin-top: 30px;
+}
+.outrosServicos{
+    margin: 80px 0 0 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.outrosServicos.titleOutros{
+    width: 100%;
+    margin: 50px 0 50px 0;
+
+}
+.titleOutros p {
+    text-align: center;
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    text-shadow:2px 1px 5px rgb(255, 5, 5);
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.tablePreco{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    
+}
+
+.tablePreco .areaPreco {
+    width: 900px;
+    margin-top: 50px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+}
+
+.tablePreco .areaPreco .precoLeft{
+    width: 50%;
+    text-align: center;
+    margin: 40px 0 0px 0;
+}
+.tablePreco .areaPreco .precoLeft p,
+.precoRight p{
+    font-size: 23px;
+    border-bottom: 8px dotted rgb(114, 0, 0);
+}
+
+.tablePreco .areaPreco .precoRight{
+    width: 50%;
+    text-align: center;
+    margin: 40px 0 0px 0;
+    
+}
+.tablePreco .areaPreco .precoRight p span{
+    font-size: 23px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+/*area da galeria de fotos*/
+
+.containerGaleria{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.areaGaleria{
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.areaGaleria .titleGaleria{
+    margin: 60px 0 60px 0;
+    width: 100%;
+}
+.areaGaleria .titleGaleria p {
+    text-align: center;
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    text-shadow:2px 1px 5px rgb(255, 5, 5);
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+ .areaFotos {
+    width: 90%;
+   
+}
+.cortes{
+    width: 100%;
+    text-align: center;
+}
+.cortes p {
+    font-size: 28px;
+    font-family: 'Lora',Arial, Helvetica, sans-serif;
+    margin: 100px 0 30px 0;
+    letter-spacing: 5px;
+}
+
+.carousel {
+    color: #ee1010;
+  
+    --carousel-button-bg: #fff;
+    --carousel-button-shadow: 0 2px 1px -1px rgba(255, 0, 0, 0.973), 0 1px 1px 0 rgb(0 0
+            0 / 14%), 0 1px 3px 0 rgba(255, 2, 2, 0.918);
+  
+    --carousel-button-svg-width: 20px;
+    --carousel-button-svg-height: 20px;
+    --carousel-button-svg-stroke-width: 2.5;
+  }
+  
+  .carousel__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 80%;
+    height: 450px;
+    margin-right: 6px;
+    padding: 3px !important;
+    background-color: rgba(0, 0, 0,0.3);
+    border-radius: 6px;
+    
+  }
+
+  .carousel__slide img{
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      
+  }
+  
+  
+
+/* area do footer*/
+
+.container-footer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.areaFooter{
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: column;
+    width: 100%;
+}
+.titleFooter{
+    margin: 50px 0 50px 0;
+}
+
+.titleFooter p {
+    text-align: center;
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    text-shadow:2px 1px 5px rgb(255, 5, 5);
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.areaInfo{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.leftInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 60px 60px 60px ;
+    
+
+}
+.leftInfo h4{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lora',Arial, Helvetica, sans-serif;
+    
+}
+.leftInfo p {
+    margin: 15px 0 10px 30px;
+}
+.leftInfo p span{
+    color: rgb(255, 0, 0);
+    font-family: 'Lora',Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.redeSocila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.redeSocila p {
+    font-size: 28px;
+    font-family: 'Lora',Arial, Helvetica, sans-serif;
+}
+
+.rede{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.face img, .insta img{
+    width: 50px;
+    height: 50px;
+    
+}
+.face img:hover, .insta img:hover {
+    border: 1px solid #f00;
+    border-radius: 50%;
+}
+.face{
+    margin: 0 30px 0px 40px;
+}
+.rightInfo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.rightInfo h4{
+    font-size: 25px;
+    font-family: 'Lora',Arial, Helvetica, sans-serif;
+    margin-bottom: 60px;
+   
+}
+
+.rightInfo .horarioFun {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightInfo .horarioFun   .horarioLeft {
+    width: 50%;
+    margin: -10px 0 50px 100px;
+    
+    
+    
+}
+.rightInfo .horarioFun   .horarioLeft p{
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 15px 0 15px 0;
+    border-bottom: 5px dotted  rgb(114, 0, 0);
+}
+ .red{
+    color: #f00;
+}
+
+.rightInfo .horarioFun .diaRight{
+    width: 50%;
+    margin: -10px 100px 50px 0;
+   
+}
+.rightInfo .horarioFun .diaRight p{
+    font-family: 'Lora', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 15px 0 15px 0;
+    border-bottom: 5px dotted  rgb(114, 0, 0);
+    text-align: right;
+}
+.direirosAltoral{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   background: #000;
+   color: #fff;
+   border-top: 1px solid #999;
+}
+.direirosAltoral p{
+    
+    font-family: 'Lora',Arial, Helvetica, sans-serif;
+    font-family: 16px;
+    font-weight: 500;
+}
+
+@media (width:1024px) {
+    .topbar .nome h2 span{
+        font-size: 22px;
+        letter-spacing: -10px;
+    }
+    .container-services .area-services .servicos .servico1 .image img {
+        width: 50px;
+        height: 50px;
+    }
+    .tablePreco {
+        width: 85%;
+    }
+    .container-sobre .areaSobre .sobreRight .areaVideo .video video {
+       
+        margin-left: 21px;
+    }
+    .areaGaleria .areaFotos .fotos .foto1 {
+        width: 200px;
+        height: 200px;
+    }
+    .areaGaleria .areaFotos .fotos .foto1 p {
+        font-size: 13px;
+    }
+    .container-services .area-services .servicos {
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .areaInfo {
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .leftInfo{
+        width: 90%;
+    }
+}
+
+@media (width:768px) and (max-width: 1023px){
+    .navigation{
+        left: -300px;
+    }
+    .navigation.active {
+        left: 0;
+        width: 300px;
+    }
+    .main{
+        width: 100%;
+        left: 0;
+    }
+    .main.active{
+        width: calc(100% - 300px);
+        left: 300px;
+    }
+    .topbar .nome h2 span{
+        font-size: 18px;
+        letter-spacing: -500px;
+        display: none;
+    }
+
+    .topbar p{
+        display: block;
+    }
+    .container-sobre .areaSobre .sobreRight .areaVideo .video video {
+        width: 97%;
+        margin-left: 12px;
+    }
+    .container-sobre .areaSobre {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+       
+        flex-direction: column;
+    }
+    .container-sobre .areaSobre .SobreLeft {
+        width: 92%;
+        margin: 50px 0 50px 2px;
+    }
+    .container-sobre .areaSobre .sobreRight {
+        width: 100%;
+        
+    }
+    .container-services .area-services .servicos {
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tablePreco {
+        width: 85%;
+    }
+    .areaGaleria .areaFotos .fotos {
+       
+        grid-template-columns: repeat(2, 4fr);
+    }
+    .areaGaleria .areaFotos .fotos .foto1 {
+        width: 200px;
+        height: 200px;
+        margin: 30px 10px 28px 10px;
+    }
+    .areaInfo {
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .leftInfo{
+        width: 64%;
+    }
+
+}
+
+@media (width:425px) and (max-width: 767px) {
+    .navigation{
+        width: 100%;
+        left: -100%;
+        z-index: 999;
+    }
+    .navigation.active {
+        width: 100%;
+        left: 0;
+       
+    }
+    .main,
+    .main.active
+    {
+        width: 100%;
+        left: 0;
+       
+    }
+    .navigation ul li a .icon{
+        left: 0px;
+        
+    }
+    .toggleMenu{
+        display: block;
+    }
+    .topbar .nome h2 span{
+        display: none;
+    }
+    .topbar p{
+        display: block;
+    }
+    .container-sobre .areaSobre {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container-sobre .areaSobre .SobreLeft {
+        width: 66%;
+        margin: 26px 0 36px 3px;
+    }
+    .container-sobre .areaSobre .sobreRight {
+        width: 90%;
+        
+    }
+    .container-sobre .areaSobre .sobreRight .areaVideo .video video {
+        width: 100%;
+        margin-left: 0px;
+    }
+        .container-services .area-services .servicos {
+            
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .tablePreco {
+            width: 91%;
+            
+        }
+        .tablePreco .areaPreco .precoLeft p, .precoRight p {
+            font-size: 18px;
+            
+        }
+        .tablePreco .areaPreco .precoRight p span {
+            font-size: 18px;
+        
+        }
+        .areaGaleria .areaFotos .fotos {
+            
+            grid-template-columns: repeat(1, 4fr);
+        }
+    .areaInfo {
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .leftInfo {
+        
+        margin: 0px 60px 0px 0px;
+    }
+    .leftInfo p {
+        margin: 14px 0 12px 29px;
+    }
+    .rightInfo .horarioFun .horarioLeft {
+        width: 50%;
+        margin: 0px 0 50px 51px;
+    }
+
+    .rightInfo .horarioFun .diaRight {
+        width: 50%;
+        margin: -1px 34px 49px 0;
+    }
+    
+}
+@media (width:375px) and (max-width: 424px){
+    .navigation{
+        width: 100%;
+        left: -100%;
+        z-index: 999;
+    }
+    .navigation.active {
+        width: 100%;
+        left: 0;
+       
+    }
+    .main,
+    .main.active
+    {
+        width: 100%;
+        left: 0;
+       
+    }
+    .navigation ul li a .icon{
+        left: 0px;
+        
+    }
+    .toggleMenu{
+        display: block;
+        margin-right: 80px;
+    }
+    .toggle2{
+        margin-left: 90px;
+    }
+    .topbar .nome h2 span{
+        display: none;
+    }
+    .topbar p{
+        display: block;
+    }
+    .container-sobre .titulo p {
+        font-size: 21px;
+        letter-spacing: 7px;
+    } 
+    .container-sobre .areaSobre {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container-sobre .areaSobre .SobreLeft {
+        width: 66%;
+        margin: 26px 0 36px 3px;
+    }
+    .container-sobre .areaSobre .sobreRight {
+        width: 90%;
+        
+    }
+    .container-sobre .areaSobre .sobreRight .areaVideo .video video {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .container-services .area-services .servicos {
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tablePreco {
+        width: 91%;
+        
+    }
+    .tablePreco .areaPreco .precoLeft p, .precoRight p {
+        font-size: 18px;
+        
+    }
+    .tablePreco .areaPreco .precoRight p span {
+        font-size: 18px;
+    
+    }
+    .areaGaleria .titleGaleria p {
+       
+        font-size: 18px;
+        
+    }
+    .areaGaleria .areaFotos .fotos {
+        
+        grid-template-columns: repeat(1, 4fr);
+    }
+    .areaInfo {
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .leftInfo {
+        
+        margin: 0px 60px 0px 0px;
+    }
+    .rightInfo .horarioFun {
+        width: 87%;
+        
+    }
+    .leftInfo p {
+        margin: 14px 0 12px 15px;
+        font-size: 13px;
+    }
+    .leftInfo p span {
+       
+        font-size: 18px;
+    }
+    .face img, .insta img {
+        width: 36px;
+        height: 36px;
+    }
+    .face {
+        margin: 0 16px 0px 11px;
+    }
+    .rightInfo h4 {
+        
+        margin-top: 40px;
+    }
+    .rightInfo .horarioFun .horarioLeft {
+        width: 50%;
+        margin: 0px 0 50px 18px;
+    }
+
+    .rightInfo .horarioFun .diaRight {
+        width: 50%;
+        margin: -1px 23px 49px 0;
+    }
+   
+}
+@media (width:320px) and (max-width: 374px){
+    .navigation{
+        width: 100%;
+        left: -100%;
+        z-index: 999;
+    }
+    .navigation.active {
+        width: 100%;
+        left: 0;
+       
+    }
+    .main,
+    .main.active
+    {
+        width: 100%;
+        left: 0;
+       
+    }
+    .navigation ul li a .icon{
+        left: 0px;
+        
+    }
+    .toggleMenu{
+        display: block;
+        margin-right: 80px;
+    }
+    .toggle2{
+        margin-left: 90px;
+    }
+    .topbar .nome h2 span{
+        display: none;
+    }
+    .topbar p{
+        display: block;
+    }
+    .container-sobre .titulo p {
+        font-size: 19px;
+        letter-spacing: 2px;
+    } 
+    .container-sobre .areaSobre {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container-sobre .areaSobre .SobreLeft {
+        width: 92%;
+        margin: 26px 0 36px 3px;
+    }
+    .container-sobre .areaSobre .sobreRight {
+        width: 97%;
+        
+    }
+    .container-sobre .areaSobre .sobreRight .areaVideo .video video {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .container-services .area-services .servicos {
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tablePreco {
+        width: 91%;
+        
+    }
+    .tablePreco .areaPreco .precoLeft p, .precoRight p {
+        font-size: 18px;
+        
+    }
+    .tablePreco .areaPreco .precoRight p span {
+        font-size: 18px;
+    
+    }
+    .areaGaleria .titleGaleria p {
+       
+        font-size: 18px;
+        
+    }
+    .areaGaleria .areaFotos .fotos {
+        
+        grid-template-columns: repeat(1, 4fr);
+    }
+    .areaInfo {
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .leftInfo {
+        
+        margin: 0px 60px 0px 0px;
+    }
+    .rightInfo .horarioFun {
+        width: 87%;
+        
+    }
+    .leftInfo p {
+        margin: 14px 0 12px 15px;
+        font-size: 13px;
+    }
+    .leftInfo p span {
+       
+        font-size: 15px;
+    }
+    .face img, .insta img {
+        width: 36px;
+        height: 36px;
+    }
+    .face {
+        margin: 0 16px 0px 11px;
+    }
+    .rightInfo h4 {
+        
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    .rightInfo .horarioFun .horarioLeft {
+        width: 50%;
+        margin: 0px 0 50px 18px;
+    }
+    .rightInfo .horarioFun .horarioLeft p {
+      
+        font-size: 16px;
+        
+    }
+
+    .rightInfo .horarioFun .diaRight {
+        width: 50%;
+        margin: -1px 23px 49px 0;
+    }
+    .rightInfo .horarioFun .diaRight p {
+     
+        font-size: 16px;
+       
+    }
+}

@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.banner img{
+    width: 100vw;
+    height: 100vh;
+}
+
+.areaformulario{
+    width: 400px;
+    height: 400px;
+    position:fixed;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+}
+.areaformulario p {
+    font-size: 30px;
+    font-family: 'lora',Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 20px 0 20px 0;
+    letter-spacing: 12px;
+}
+.areaformulario input{
+    width: 350px;
+    margin: 20px 0 20px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #f00;
+    color: #fff;
+    outline: none;
+    
+}
+.areaformulario input::placeholder{
+    color: #fff;
+    text-align: center;
+    font-family: 'lora',Arial, Helvetica, sans-serif;
+    font-size: 19px;
+}
+.botao{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.botao a {
+    margin: 20px 15px 20px 15px;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #f00;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: 'lora',Arial, Helvetica, sans-serif;
+    color: #fff;
+    background: #f00;
+    text-align: center;
+    text-decoration: none;
+}
+.botao a:hover{
+    background: rgb(177, 0, 0);
+}
+
+.acessar{
+    padding: 10px 25px 10px 25px !important;
+}
+.esqueceu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 15px 0;
+}
+.esqueceu a {
+    font-size: 18px;
+    font-family: 'lora',Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 5px dotted #f00;
+}   
+
+.esqueceu a:hover{
+    font-weight: bold;
+    color: #f00;
+    border-bottom: 5px dotted #fff;
+    transition: 0.5s;
+}
+
+@media (width:375px) {
+    .areaformulario {
+        width: 354px;
+        height: 400px;
+    }
+    .areaformulario input {
+        width: 317px;
+      
+    }
+}
+
+@media (min-width:320px) and (max-width:375px){
+    .areaformulario {
+        width: 295px;
+        height: 400px;
+    }
+    .areaformulario input {
+        width: 263px;
+      
+    }
+}
