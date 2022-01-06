@@ -1,2 +1,2 @@
 sistema para barbearia para facilitar a vida tanto do cliente como do proprietario, esse sistema tem apresentação do estabelecimento e conta com agendamento de horario tanto pelo proprio site ou utilizando o whatsapp. 
-Ainda esta em preocesso de desenvolvimento o sistema falta a parte de login e tbm a do agendamento pelo prorpio site. 
+Ainda esta em preocesso de desenvolvimento o sistema falta ainda o recuperar senha e a parte de agendamneto que esta sendo desenvolvido.
