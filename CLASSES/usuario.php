@@ -105,6 +105,39 @@
 				return false; //não
 			}
 		}
+
+		public function trocasenha($email, $senha)
+		{
+			global $pdo;
+
+			//verificar se o email e senha estao cadastrados, se sim
+			$sql = $pdo->prepare("SELECT id_usuario FROM usuarios WHERE
+			email = :e");
+
+			$sql->bindValue(":e", $email);
+			;
+			$sql->execute();
+
+			if($sql->rowCount() > 0)
+			{
+				
+				return false; //logado com sucesso.
+			}
+			else
+			{
+				//atualizar a senha
+				$sql = $pdo->prepare("UPDATE usuarios SET senha = :s WHERE email = :e");
+
+				$sql->bindValue(":s",md5($senha));
+				$sql->bindValue(":e",$email);
+
+				$sql->execute();
+
+				return true;
+			}
+
+			
+		}
 	}
 
 

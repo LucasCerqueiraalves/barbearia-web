@@ -26,6 +26,7 @@
         <h1>Recuperar Senha</h1>
         <form method="POST">
             <input type="email" name="email" maxlength="40" placeholder="email" autocomplete="off" autofocus />
+            
             <input type="submit" value="recuperar" class="bb" />
         
         </form>
@@ -52,6 +53,7 @@
                 if($u->recupera($email))
                 {
                     header("location: novaSenha.php");
+                    
                 }
                 else
                 {
